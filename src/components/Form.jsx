@@ -1,8 +1,8 @@
 import React from 'react'
-import useComponent from '../hooks/useComponent'
+import useForm from '../hooks/useForm'
 
 const Form = () => {
-    const { current, component, handleClick, nextStep, previousStep } = useComponent();
+    const { current, component, handleClick, nextStep, previousStep } = useForm();
 
 
     return (

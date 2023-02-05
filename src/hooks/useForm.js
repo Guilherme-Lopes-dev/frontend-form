@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Info from '../components/Info';
-import Plan from '../components//Plan';
+import Plan from '../components/Plan';
 import Summary from '../components/Summary';
 import Addons from '../components/Addons';
 
