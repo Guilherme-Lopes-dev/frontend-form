@@ -1,19 +1,11 @@
-import React, { useState } from 'react'
-
+import React, { useContext } from 'react'
+import {PlanContext} from '../hooks/PlanContexProvider'
 
 
 const Info = () => {
 
-    const [inputValues, setInputValues] = useState({
-        inputName: '',
-        inputEmail: '',
-        inputPhone: ''
-    });
-
-    const handleInputChange = (e) => {
-        setInputValues({ ...inputValues, [e.target.name]: e.target.value });
-    }
- 
+  const { handleInputChange, inputValues } = useContext(PlanContext);
+   
     return (
         
         

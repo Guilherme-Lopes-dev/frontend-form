@@ -52,7 +52,7 @@ const Form = () => {
             </div>
             <div className='absolute bottom-10 right-10 ...'>
                 {current === 4 ? (
-                    <button className="bg-grey-light rounded-lg py-3 px-6 text-xl bg-blue-700 text-white">Submit</button>
+                    <button onClick={() => handleClick(5)} className="bg-grey-light rounded-lg py-3 px-6 text-xl bg-blue-700 text-white">Submit</button>
                 ) : (
                     <div className=''>                        
                         <button className="bg-grey-light rounded-lg py-3 px-6 text-xl bg-blue-700 text-white" onClick={nextStep}>Next Step</button>

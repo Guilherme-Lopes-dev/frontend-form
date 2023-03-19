@@ -1,7 +1,8 @@
 import React, {useContext} from 'react'
 import { GiConsoleController, GiDiceFire } from "react-icons/gi";
 import { FaGamepad } from "react-icons/fa";
-import { PlanContext } from '../hooks/PlanContexProvider'
+import { PlanContext } from '../hooks/PlanContexProvider';
+
 
 
 
@@ -23,7 +24,7 @@ const Plan = () => {
               </div>
               <div className='pt-12 pl-5'>
                 <p className='font-bold	text-xl text-blue-800	'>Arcade</p>
-                <p>{price.arcade}</p>
+                <p>${price.Arcade}</p>
               </div>
             </div>
             <div className={selectedPlan === 'Advanced' ? 'h-60 w-[30%] rounded-2xl border-4 border-indigo-400 bg-indigo-100 cursor-pointer selected' : 'h-60 w-[30%] rounded-2xl border-4 hover:border-indigo-400 hover:bg-indigo-100 hover:cursor-pointer'}
@@ -33,7 +34,7 @@ const Plan = () => {
               </div>
               <div className='pt-12 pl-5'>
                 <p className='font-bold	text-xl text-blue-800	'>Advanced</p>
-                <p>{price.advanced}</p>
+                <p>${price.Advanced}</p>
               </div>
             </div>
             <div className={selectedPlan === 'Pro' ? 'h-60 w-[30%] rounded-2xl border-4 border-indigo-400 bg-indigo-100 cursor-pointer selected' : 'h-60 w-[30%] rounded-2xl border-4 hover:border-indigo-400 hover:bg-indigo-100 hover:cursor-pointer'}
@@ -43,7 +44,7 @@ const Plan = () => {
               </div>
               <div className='pt-12 pl-5'>
                 <p className='font-bold	text-xl  text-blue-900'>Pro</p>
-                <p>{price.pro}</p>
+                <p>${price.Pro}</p>
               </div>
             </div>
           </div>
@@ -52,7 +53,7 @@ const Plan = () => {
               <div className='pt-3'>
                 <span className="mr-4 text-2xl font-medium text-black dark:text-black">Montly</span>
                 <label className="relative inline-flex items-center cursor-pointer">
-                  <input type="checkbox" value="" id="debug" className="sr-only peer"  onClick={handleCheckbox} onChange={handlePlanSelectionWithPrice} />
+                  <input type="checkbox" value="" id="debug" className="sr-only peer" checked={isYearly} onClick={handleCheckbox} onChange={handlePlanSelectionWithPrice} />
                   <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none
                     peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 
                     rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full 
